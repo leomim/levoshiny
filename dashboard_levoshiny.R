@@ -167,7 +167,7 @@ ui <- dashboardPage(
                   h5(tags$strong('TO USE THIS APP, THE PATIENT MUST BE AT STEADY-STATE (minimum 72 hours after the introduction of levofloxacine).'),style = "color: red;"),
                   h5(tags$strong("GFR was calculated using the CKD-EPI formula as implemented in the Lemaitre et al model. The model can only be used for GFR values between 38.9 and 129.5ml/min/1.73m2.",style = "color: red;")),width="99%",status="danger",solidHeader = TRUE)),
    
-      #Sidebar Inputs (main inputs with different types of inputs (numeric, select, slider) )
+      #Sidebar Inputs 
       tabItem(tabName = "Inputs",
               fluidRow(
                 #box Dosage (inputs)
@@ -747,3 +747,4 @@ server <- function(input, output,session) {
 
 # Run the application 
 shinyApp(ui = ui, server = server)
+
